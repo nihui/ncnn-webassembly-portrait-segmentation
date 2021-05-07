@@ -1,8 +1,8 @@
 # ncnn-webassembly-erdnet
 
-open https://nihui.github.io/ncnn-webassembly-erdnet/index.html and enjoy (front camera)
+open https://nihui.github.io/ncnn-webassembly-portrait-segmentation/index.html and enjoy (front camera)
 
-open https://nihui.github.io/ncnn-webassembly-erdnet/up.html and enjoy (rear camera)
+open https://nihui.github.io/ncnn-webassembly-portrait-segmentation/up.html and enjoy (rear camera)
 
 
 # build and deploy
