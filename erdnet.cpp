@@ -63,7 +63,7 @@ int ERDNet::detect(const cv::Mat& rgba, cv::Mat& mask_g)
     out.substract_mean_normalize(0, denorm_vals);
 
     mask_g.create(h, w, CV_8UC1);
-    out.to_pixels_resize(mask_g.data, ncnn::Mat::PIXEL_GRAY);
+    out.to_pixels_resize(mask_g.data, ncnn::Mat::PIXEL_GRAY, w, h);
 
     return 0;
 }
