@@ -9,7 +9,7 @@ if(NOT WASM_FEATURE)
 endif()
 
 set(OpenCV_DIR "${CMAKE_CURRENT_SOURCE_DIR}/opencv-mobile-4.5.1-webassembly/${WASM_FEATURE}/lib/cmake/opencv4")
-find_package(OpenCV REQUIRED core imgproc)
+find_package(OpenCV REQUIRED core imgproc highgui)
 
 set(ncnn_DIR "${CMAKE_CURRENT_SOURCE_DIR}/ncnn-20210507-webassembly/${WASM_FEATURE}/lib/cmake/ncnn")
 find_package(ncnn REQUIRED)
