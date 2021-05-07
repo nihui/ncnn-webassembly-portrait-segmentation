@@ -13,6 +13,7 @@
 // specific language governing permissions and limitations under the License.
 
 #include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include "benchmark.h"
 #include "erdnet.h"
@@ -85,6 +86,7 @@ void erdnet_ncnn(unsigned char* rgba_data, int w, int h)
         g_erdnet->load();
 
         bg_bgr = cv::imread("background.jpg", 1);
+        cv::resize(bg_bgr, bg_bgr, cv::Size(w, h));
     }
 
     cv::Mat rgba(h, w, CV_8UC4, (void*)rgba_data);
