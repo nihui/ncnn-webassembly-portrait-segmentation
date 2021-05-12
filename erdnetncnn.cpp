@@ -84,7 +84,7 @@ static void on_image_render(cv::Mat& rgba)
         g_erdnet->load();
 
         bg_bgr = cv::imread("background.jpg", 1);
-        cv::resize(bg_bgr, bg_bgr, cv::Size(w, h));
+        cv::resize(bg_bgr, bg_bgr, cv::Size(rgba.cols, rgba.rows));
     }
 
     cv::Mat mask_g;
