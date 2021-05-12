@@ -8,7 +8,7 @@ if(NOT WASM_FEATURE)
     message(FATAL_ERROR "You must pass cmake option -DWASM_FEATURE and possible values are basic, simd, threads and simd-threads")
 endif()
 
-set(OpenCV_DIR "${CMAKE_CURRENT_SOURCE_DIR}/opencv-mobile-4.5.1-webassembly/${WASM_FEATURE}/lib/cmake/opencv4")
+set(OpenCV_DIR "${CMAKE_CURRENT_SOURCE_DIR}/opencv-mobile-2.4.13.7-webassembly/${WASM_FEATURE}/share/OpenCV")
 find_package(OpenCV REQUIRED core imgproc highgui)
 
 set(ncnn_DIR "${CMAKE_CURRENT_SOURCE_DIR}/ncnn-20210507-webassembly/${WASM_FEATURE}/lib/cmake/ncnn")
