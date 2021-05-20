@@ -14,10 +14,8 @@
 
 #include "erdnet.h"
 
-#include <opencv2/core/core.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-
-#include "cpu.h"
+#include <cpu.h>
+#include <simpleocv.h>
 
 int ERDNet::load(bool use_gpu)
 {

@@ -15,9 +15,8 @@
 #ifndef ERDNET_H
 #define ERDNET_H
 
-#include <opencv2/core/core.hpp>
-
 #include <net.h>
+#include <simpleocv.h>
 
 class ERDNet
 {
